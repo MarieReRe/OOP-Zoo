@@ -6,7 +6,7 @@ namespace MarieZoo
 
 
 	/// <summary>
-	/// Summary description for Class1
+	/// Summary description for ScarletIbis
 	/// </summary>
 	public  abstract class Animals
 	{

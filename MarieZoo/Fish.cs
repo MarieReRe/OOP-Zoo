@@ -1,14 +1,19 @@
 ﻿using System;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class Class1
+
+namespace MarieZoo
 {
-	public Class1()
+
+
+
+	public abstract class Fish
 	{
-		//
-		// TODO: Add constructor logic here
-		//
+		public abstract int Length{ get; set; }
+		public abstract int Color { get; set; }
+
+		public override string Swim()
+		{
+			return "We do lots of swimming, swimming all day! Just keep swimming, just keep swimming....";
+		}
 	}
 }
