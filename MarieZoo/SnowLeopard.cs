@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MarieZoo
 {
-    class SnowLeopard
+    class SnowLeopard: Mammals
     {
     }
 }

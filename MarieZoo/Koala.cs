@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MarieZoo
 {
-    class Koala
+   public class Koala
     {
     }
 }

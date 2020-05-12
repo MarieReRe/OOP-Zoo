@@ -11,9 +11,12 @@ namespace MarieZoo
 	public  abstract class Animals
 	{
 
-		public virtual bool InZoo();
+		public virtual bool IsInZoo { get; set; }
 
-		public abstract void Eat();
+		public virtual string Eat()
+		{
+			Console.WriteLine("Animals eat a lot!");
+		}
 
 		public abstract string Sound();
 
