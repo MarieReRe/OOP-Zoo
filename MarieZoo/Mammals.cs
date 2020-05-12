@@ -3,12 +3,16 @@
 /// <summary>
 /// Summary description for Class1
 /// </summary>
-public class Class1
+public  abstract class Mammals : Animals
+
 {
-	public Class1()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
+    public abstract int Age { get; set; }
+    public abstract int Weight { get; set; }
+
+    public override string Hunt()
+    {
+        return "Our mammals have various degrees of hunting ability, keep a safe distance";
+    }
+
+
 }
