@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace MarieZoo.Interfaces
+namespace MarieZoo.Mammals
 {
 
     //CONCRETE CLASS
@@ -20,7 +20,9 @@ namespace MarieZoo.Interfaces
 
         public string Movement => " We undulate like a wave or flap our fins/sides like wings";
 
-        public string IEnvironment.FunFact => throw new NotImplementedException();
+        string IEnvironment.FunFact => "Ancient Greek dentists used the venom from the sting ray's spine as an anesthetic";
+
+       
 
         string IFeed.FeedMe()
         {

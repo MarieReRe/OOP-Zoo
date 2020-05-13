@@ -18,7 +18,7 @@ namespace MarieZoo
 			Console.WriteLine("Animals eat a lot!");
 		}
 
-		public abstract string Sound();
+	
 
 	}
 }
