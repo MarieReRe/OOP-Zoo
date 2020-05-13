@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MarieZoo.Mammals
+namespace MarieZoo.Interfaces
 {
     interface ISound
     {
-        string MakeSound();
+        string GetMakeSound();
     }
 }

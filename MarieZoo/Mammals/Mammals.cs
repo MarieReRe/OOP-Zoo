@@ -1,4 +1,5 @@
-﻿using MarieZoo.Mammals;
+﻿using MarieZoo.Interfaces;
+using MarieZoo.Mammals;
 using System;
 
 
@@ -11,24 +12,30 @@ namespace MarieZoo.Mammals
     public abstract class Mammals : Animals, IFeed, ISound 
 
     {
-        public abstract int Age { get; set; }
-        public abstract int Weight { get; set; }
+        public abstract int GetAge();
 
+        public abstract int GetWeight();
+
+
+        /*  ----------------------  HOW DO WE USE CONSTRUCTOR??
         public Mammals(int weight, int age)
         {
-            Weight = weight;
-            Age = age;
-            IsInZoo = true;
+            SetWeight(weight);
+        GetAge(age);
+        IsInZoo = true;
 
         }
-        public string FeedMe()
+ 
+    */
+
+    public string FeedMe()
         {
             Console.WriteLine("Insert a quarter to feed the animals");
             string feedingTime = "Insert a quarter to feed the animals";
             return feedingTime;
         }
 
-        public string MakeSound()
+        public string GetMakeSound()
         {
             Console.WriteLine("All of our mammals make their own unique sound");
             string uniqueSound = "All of our mammals make their own unique sound";

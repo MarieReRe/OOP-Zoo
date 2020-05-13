@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MarieZoo.Mammals
+namespace MarieZoo.Interfaces
 {
     interface IEnvironment
     {

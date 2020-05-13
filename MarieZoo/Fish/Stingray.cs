@@ -1,9 +1,10 @@
-﻿using System;
+﻿using MarieZoo.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace MarieZoo.Mammals
+namespace MarieZoo.Fish
 {
 
     //CONCRETE CLASS
@@ -29,7 +30,7 @@ namespace MarieZoo.Mammals
             return "Squid for $1, we're hungry!";
         }
 
-        string ISound.MakeSound()
+        private string GetMakeSound()
         {
             return "blub blub";
         }

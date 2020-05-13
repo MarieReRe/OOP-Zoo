@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace MarieZoo
+namespace MarieZoo.Fish
 {
 
 
