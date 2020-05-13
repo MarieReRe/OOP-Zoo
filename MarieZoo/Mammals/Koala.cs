@@ -1,29 +1,36 @@
-﻿using System;
+﻿using MarieZoo.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MarieZoo.Mammals
 {
-    public class Koala : Mammals
+    public class Koala : Mammals, IDesign, IEnvironment, IFeed, ISound
     {
+        public decimal LengthInInches => 30;
+
+        public string Color => throw new NotImplementedException();
+
+        public string LegsOrFins => throw new NotImplementedException();
+
+        public string Movement => throw new NotImplementedException();
+
+        public string Predators => throw new NotImplementedException();
+
+        public string FunFact => throw new NotImplementedException();
+
         public override int GetAge()
         {
-            throw new NotImplementedException();
+            return 1;
         }
 
-        public override void SetAge(int value)
-        {
-            throw new NotImplementedException();
-        }
+     
 
         public override int GetWeight()
         {
-            throw new NotImplementedException();
+            return 30; ;
         }
 
-        public override void SetWeight(int value)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
