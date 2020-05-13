@@ -13,13 +13,17 @@ namespace MarieZoo.Test
         /* -------------------BIRD SECTION-------------------------
          ---------------------------------------------------------*/
         [Fact]
-        public void BirdsInheritAnimalBehavior()
+        public void PuffinInheritsBehavior()
         {
             //arrange
+            Puffin puffin = new Puffin() { Name = "Puff Diddy" };
 
             // act
+            string expected = ($"{puffin.GetMakeSound()}");
+            string input = puffin.GetMakeSound();
 
             //assert
+            Assert.Equal(expected,input);
 
         }
 

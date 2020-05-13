@@ -2,6 +2,7 @@
 using MarieZoo.Fish;
 using MarieZoo.Mammals;
 using System;
+using System.Collections.Generic;
 
 namespace MarieZoo
 {
@@ -28,12 +29,12 @@ namespace MarieZoo
 
             //create new animal array
             Animals[] animals = new Animals[6];
-            Puffin puffin = new Puffin { Name = "Puff Diddy"};
-            ScarletIbis scarletIbis = new ScarletIbis {Name = "Q-T Pie" };
-            Seahorse seahorse = new Seahorse { Name = "Sven" };
-            Stingray stingray = new Stingray {Name = "Spotty" };
-            Koala koala = new Koala {Name = "George" };
-            SnowLeopard snowLeopard = new SnowLeopard {Name = "Fluffy" };
+            Puffin puffin = new Puffin() { Name = "Puff Diddy"};
+            ScarletIbis scarletIbis = new ScarletIbis() {Name = "Q-T Pie" };
+            Seahorse seahorse = new Seahorse() { Name = "Sven" };
+            Stingray stingray = new Stingray() {Name = "Spotty" };
+            Koala koala = new Koala() {Name = "George" };
+            SnowLeopard snowLeopard = new SnowLeopard() {Name = "Fluffy" };
 
             //Animal Array Contains 6 animals
 
@@ -50,7 +51,6 @@ namespace MarieZoo
             animals[4] = koala;
             animals[5] = snowLeopard;
 
-        
 
             //for loop to display animals
             for(int i = 0; i < animals.Length; i++)
@@ -58,5 +58,13 @@ namespace MarieZoo
                 Console.WriteLine($"{animals[i].Name} is a new addition to the zoo!" );
             }
         }
+
+
+       /* public Puffin()
+        {
+            List
+       */ }
+
+
     }
 }
