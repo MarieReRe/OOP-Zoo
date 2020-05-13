@@ -2,6 +2,7 @@
 using MarieZoo.Fish;
 using MarieZoo.Mammals;
 using System;
+using System.Collections.Generic;
 
 namespace MarieZoo
 {
@@ -50,7 +51,6 @@ namespace MarieZoo
             animals[4] = koala;
             animals[5] = snowLeopard;
 
-        
 
             //for loop to display animals
             for(int i = 0; i < animals.Length; i++)
@@ -58,5 +58,13 @@ namespace MarieZoo
                 Console.WriteLine($"{animals[i].Name} is a new addition to the zoo!" );
             }
         }
+
+
+       /* public Puffin()
+        {
+            List
+       */ }
+
+
     }
 }
