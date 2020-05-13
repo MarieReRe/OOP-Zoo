@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MarieZoo
+namespace MarieZoo.Birds
 {
-    interface Interface1
+    class Bird
     {
     }
 }

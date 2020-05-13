@@ -8,10 +8,10 @@ namespace MarieZoo
 
 	public abstract class Fish
 	{
-		public abstract int Length{ get; set; }
-		public abstract int Color { get; set; }
+		public abstract decimal Length{ get; set; }
+		public abstract string Color { get; set; }
 
-		public override string Swim()
+		public  string Swim()
 		{
 			return "We do lots of swimming, swimming all day! Just keep swimming, just keep swimming....";
 		}

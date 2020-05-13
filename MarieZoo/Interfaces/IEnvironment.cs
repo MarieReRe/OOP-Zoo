@@ -4,7 +4,11 @@ using System.Text;
 
 namespace MarieZoo.Interfaces
 {
-    interface IHunt
+    interface IEnvironment
     {
+        string Predators { get; }
+
+        string
+
     }
 }
