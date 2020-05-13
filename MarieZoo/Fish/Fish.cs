@@ -9,7 +9,7 @@ namespace MarieZoo.Fish
 	public abstract class Fish: Animals
 	{
 
-
+		public abstract int GetNumberOfTeeth();
 
 		public  string Swim()
 		{
