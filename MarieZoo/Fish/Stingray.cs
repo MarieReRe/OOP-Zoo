@@ -20,6 +20,8 @@ namespace MarieZoo.Interfaces
 
         public string Movement => " We undulate like a wave or flap our fins/sides like wings";
 
+        public string IEnvironment.FunFact => throw new NotImplementedException();
+
         string IFeed.FeedMe()
         {
             return "Squid for $1, we're hungry!";

@@ -8,7 +8,6 @@ namespace MarieZoo.Interfaces
     {
         string Predators { get; }
 
-        string
-
+        string FunFact { get; }
     }
 }
