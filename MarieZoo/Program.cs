@@ -28,12 +28,12 @@ namespace MarieZoo
 
             //create new animal array
             Animals[] animals = new Animals[6];
-            Puffin puffin = new Puffin { Name = "Puff Diddy"};
-            ScarletIbis scarletIbis = new ScarletIbis {Name = "Q-T Pie" };
-            Seahorse seahorse = new Seahorse { Name = "Sven" };
-            Stingray stingray = new Stingray {Name = "Spotty" };
-            Koala koala = new Koala {Name = "George" };
-            SnowLeopard snowLeopard = new SnowLeopard {Name = "Fluffy" };
+            Puffin puffin = new Puffin() { Name = "Puff Diddy"};
+            ScarletIbis scarletIbis = new ScarletIbis() {Name = "Q-T Pie" };
+            Seahorse seahorse = new Seahorse() { Name = "Sven" };
+            Stingray stingray = new Stingray() {Name = "Spotty" };
+            Koala koala = new Koala() {Name = "George" };
+            SnowLeopard snowLeopard = new SnowLeopard() {Name = "Fluffy" };
 
             //Animal Array Contains 6 animals
 
