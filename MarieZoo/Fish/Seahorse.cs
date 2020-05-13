@@ -1,4 +1,5 @@
 ﻿using MarieZoo.Interfaces;
+using MarieZoo.Mammals;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -24,9 +25,19 @@ namespace MarieZoo.Fish
             throw new NotImplementedException();
         }
 
+        public override string GetDiet()
+        {
+            return "I eat algea and small creatures that live on coral.";
+        }
+
         public string GetMakeSound()
         {
             return "neigh neigh";
+        }
+
+        public override int GetNumberOfTeeth()
+        {
+            return 0;
         }
     }
 }

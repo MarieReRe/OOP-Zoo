@@ -1,4 +1,5 @@
 ﻿using MarieZoo.Interfaces;
+using MarieZoo.Mammals;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -23,14 +24,23 @@ namespace MarieZoo.Fish
 
         string IEnvironment.FunFact => "Ancient Greek dentists used the venom from the sting ray's spine as an anesthetic";
 
-       
+        public override string GetDiet()
+        {
+            return "I love eating squid and molusks";
+        }
+
+        public override int GetNumberOfTeeth()
+        {
+            return 0;
+        }
 
         string IFeed.FeedMe()
         {
             return "Squid for $1, we're hungry!";
         }
 
-        private string GetMakeSound()
+    
+        string ISound.GetMakeSound()
         {
             return "blub blub";
         }
