@@ -3,7 +3,7 @@ using Xunit;
 
 namespace MarieZoo.Test
 {
-    public class UnitTest1
+    public class NoAnimalTesting
     {
         [Fact]
         public void Test1()
