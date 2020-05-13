@@ -1,5 +1,5 @@
 ﻿using MarieZoo.Interfaces;
-using MarieZoo.Mammals;
+using MarieZoo.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;

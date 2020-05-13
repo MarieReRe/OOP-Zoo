@@ -1,10 +1,10 @@
 ﻿using MarieZoo.Interfaces;
-using MarieZoo.Mammals;
+using MarieZoo.Interfaces;
 using System;
 
 
 
-namespace MarieZoo.Mammals
+namespace MarieZoo.Interfaces
 {
     /// <summary>
     /// Summary description for ScarletIbis

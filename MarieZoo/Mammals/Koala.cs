@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MarieZoo.Mammals
+namespace MarieZoo.Interfaces
 {
     public class Koala : Mammals, IDesign, IEnvironment, IFeed, ISound
     {

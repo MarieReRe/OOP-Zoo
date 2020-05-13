@@ -1,12 +1,12 @@
 ﻿using MarieZoo.Interfaces;
-using MarieZoo.Mammals;
+using MarieZoo.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Net.Cache;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace MarieZoo.Mammals
+namespace MarieZoo.Interfaces
 {
     internal class SnowLeopard : Mammals, IDesign, IEnvironment, IFeed, ISound
     {
