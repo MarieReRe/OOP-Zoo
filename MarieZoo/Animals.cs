@@ -13,11 +13,9 @@ namespace MarieZoo
 
 		public virtual bool IsInZoo { get; set; }
 
-		public virtual string Eat()
-		{
-			Console.WriteLine("Animals eat a lot!");
-		}
+		public virtual string Name { get; set; }
 
+		
 	
 
 	}

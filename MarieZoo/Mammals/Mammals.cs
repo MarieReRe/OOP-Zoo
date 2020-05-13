@@ -1,5 +1,5 @@
 ﻿using MarieZoo.Interfaces;
-using MarieZoo.Mammals;
+using MarieZoo.Interfaces;
 using System;
 
 

@@ -1,5 +1,5 @@
 ﻿using MarieZoo.Interfaces;
-using MarieZoo.Mammals;
+using MarieZoo.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +8,7 @@ namespace MarieZoo.Fish
 {
     class Seahorse : Fish, IFeed, IDesign, IEnvironment, ISound
     {
+        public override string Name { get; set; }
         public decimal LengthInInches => 0.6m;
 
         public string Color => "I vary in golden and brown tones";

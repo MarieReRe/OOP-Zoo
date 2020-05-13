@@ -4,7 +4,11 @@ using System.Text;
 
 namespace MarieZoo.Birds
 {
-    class Bird
+    public abstract class Bird: Animals
     {
+        
+        public abstract string ColorOfEggs();
+
+        public abstract string NestingHabits();
     }
 }

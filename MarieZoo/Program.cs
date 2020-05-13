@@ -1,4 +1,7 @@
-﻿using System;
+﻿using MarieZoo.Birds;
+using MarieZoo.Fish;
+using MarieZoo.Mammals;
+using System;
 
 namespace MarieZoo
 {
@@ -21,6 +24,39 @@ namespace MarieZoo
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Zoo");
+
+
+            //create new animal array
+            Animals[] animals = new Animals[6];
+            Puffin puffin = new Puffin { Name = "Puff Diddy"};
+            ScarletIbis scarletIbis = new ScarletIbis {Name = "Q-T Pie" };
+            Seahorse seahorse = new Seahorse { Name = "Sven" };
+            Stingray stingray = new Stingray {Name = "Spotty" };
+            Koala koala = new Koala {Name = "George" };
+            SnowLeopard snowLeopard = new SnowLeopard {Name = "Fluffy" };
+
+            //Animal Array Contains 6 animals
+
+            //Bird
+            animals[0] = puffin;
+            animals[1] = scarletIbis;
+
+            // Fish
+            animals[2] = seahorse;
+            animals[3] = stingray;
+
+
+            // Mammals
+            animals[4] = koala;
+            animals[5] = snowLeopard;
+
+        
+
+            //for loop to display animals
+            for(int i = 0; i < animals.Length; i++)
+            {
+                Console.WriteLine($"{animals[i].Name} is a new addition to the zoo!" );
+            }
         }
     }
 }

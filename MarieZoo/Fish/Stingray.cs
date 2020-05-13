@@ -1,9 +1,4 @@
 ﻿using MarieZoo.Interfaces;
-using MarieZoo.Mammals;
-using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Text;
 
 namespace MarieZoo.Fish
 {
@@ -11,7 +6,7 @@ namespace MarieZoo.Fish
     //CONCRETE CLASS
     class Stingray : Fish, IFeed, ISound, IDesign, IEnvironment
     {
-        
+        public override string Name { get; set; }
         public decimal LengthInInches => 15;
 
         public string Color => "Royal blue with ivory white spots to reflect the sea floors shading to protect me from my preditors.";

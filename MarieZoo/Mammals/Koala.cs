@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace MarieZoo.Mammals
+
 {
     public class Koala : Mammals, IDesign, IEnvironment, IFeed, ISound
     {
+        public override string Name { get; set; }
         public decimal LengthInInches => 30;
 
         public string Color => throw new NotImplementedException();
