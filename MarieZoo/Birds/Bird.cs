@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MarieZoo
+namespace MarieZoo.Birds
 {
     public abstract class Bird: Animals
     {

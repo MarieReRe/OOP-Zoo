@@ -8,6 +8,7 @@ namespace MarieZoo.Birds
 {
     public class ScarletIbis : Bird, IDesign, IEnvironment, IFeed, ISound
     {
+        public override string Name { get; set; }
         public decimal LengthInInches => 17;
 
         public string Color => "Neon pink with black wing tips";

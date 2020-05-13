@@ -8,6 +8,7 @@ namespace MarieZoo.Fish
 {
     class Seahorse : Fish, IFeed, IDesign, IEnvironment, ISound
     {
+        public override string Name { get; set; }
         public decimal LengthInInches => 0.6m;
 
         public string Color => "I vary in golden and brown tones";

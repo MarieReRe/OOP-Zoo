@@ -4,7 +4,7 @@ using System;
 
 
 
-namespace MarieZoo.Interfaces
+namespace MarieZoo.Mammals
 {
     /// <summary>
     /// Summary description for ScarletIbis

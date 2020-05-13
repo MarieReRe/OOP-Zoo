@@ -15,6 +15,11 @@ namespace MarieZoo.Test
         [Fact]
         public void BirdsInheritAnimalBehavior()
         {
+            //arrange
+
+            // act
+
+            //assert
 
         }
 

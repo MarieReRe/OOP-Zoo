@@ -1,15 +1,10 @@
 ﻿using MarieZoo.Interfaces;
-using MarieZoo.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Net.Cache;
-using System.Runtime.Serialization;
-using System.Text;
 
-namespace MarieZoo.Interfaces
+namespace MarieZoo.Mammals
 {
-    internal class SnowLeopard : Mammals, IDesign, IEnvironment, IFeed, ISound
+    public class SnowLeopard : Mammals, IDesign, IEnvironment, IFeed, ISound
     {
+        public override string Name { get; set; }
         public decimal LengthInInches => 63;
 
         public string Color => "Creamy yellow with grey or black";
@@ -32,7 +27,7 @@ namespace MarieZoo.Interfaces
             return 200;
         }
 
-        public string GetMakeSound()
+        public new string GetMakeSound()
         {
             return "Meow meow, purr purr";
         }

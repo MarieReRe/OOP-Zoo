@@ -9,6 +9,7 @@ namespace MarieZoo
 {
     public class Puffin : Bird, IDesign, ISound, IEnvironment, IFeed
     {
+        public override string Name { get; set; }
         public decimal LengthInInches => 5;
 
         public string Color => "I am black and white with variants of orange on my beak";

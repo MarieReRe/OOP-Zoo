@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarieZoo", "MarieZoo\MarieZoo.csproj", "{CBA304FE-1022-40DA-8C48-A9C243B94444}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarieZoo", "MarieZoo\MarieZoo.csproj", "{CBA304FE-1022-40DA-8C48-A9C243B94444}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarieZoo.Test", "MarieZoo.Test\MarieZoo.Test.csproj", "{226B0861-3EED-4C26-A577-2A52F05DA11D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarieZoo.Test", "MarieZoo.Test\MarieZoo.Test.csproj", "{226B0861-3EED-4C26-A577-2A52F05DA11D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
