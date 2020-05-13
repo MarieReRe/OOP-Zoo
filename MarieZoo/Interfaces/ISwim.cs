@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MarieZoo
 {
-    class LionFish
+    interface Interface1
     {
     }
 }

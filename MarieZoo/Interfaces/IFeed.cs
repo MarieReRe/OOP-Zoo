@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MarieZoo
+namespace MarieZoo.Interfaces
 {
-    class Seahorse
+    interface IFeed
     {
+
+        string FeedMe();
     }
 }
