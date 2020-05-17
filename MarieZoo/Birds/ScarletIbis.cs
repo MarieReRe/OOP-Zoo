@@ -4,9 +4,19 @@
 
 namespace MarieZoo.Birds
 {
-    public class ScarletIbis : Bird, IDesign, IEnvironment, IFeed, ISound
+    public class ScarletIbis : Bird, IDesign,IFeed, ISound
     {
         public override string Name { get; set; }
+        public override string Predator()
+        {
+            return "We are hunted for bush meat";
+        }
+
+        public override string FunFact()
+        {
+            return "We are listed as an environmentally sensitive species";
+        }
+
         public decimal LengthInInches => 17;
 
         public string Color => "Neon pink with black wing tips";
@@ -14,10 +24,6 @@ namespace MarieZoo.Birds
         public string LegsOrFins => "Two neon pink thin, straw-like legs";
 
         public string Movement => "Walking and flying around the shorelines of Trinidad";
-
-        public string Predators => "We are hunted for bushmeat";
-
-        public string FunFact => "We are listed as an environmentally sensitive species";
 
         public override string ColorOfEggs()
         {

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Collections.Generic;
 
 namespace MarieZoo
@@ -13,10 +14,22 @@ namespace MarieZoo
 
 		public virtual bool IsInZoo { get; set; }
 
-		public virtual string Name { get; set; }
+		public abstract string Name { get; set; }
 
-		
-	
+        public abstract string Predator();
+
+        public abstract string FunFact();
+		public void DisplayCard()
+        {
+            Console.WriteLine("----------------------------");
+            Console.WriteLine($"{GetType().Name}");
+            Console.WriteLine("----------------------------");
+            Console.WriteLine($"Predator {Predator()}");
+            Console.WriteLine("----------------------------");
+            Console.WriteLine($"Fun Fact: {FunFact()}");
+            Console.WriteLine("----------------------------");
+
+        }
 
 	}
 }

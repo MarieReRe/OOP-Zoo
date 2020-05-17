@@ -20,7 +20,7 @@ namespace MarieZoo
 
 
 
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -55,7 +55,7 @@ namespace MarieZoo
             //for loop to display animals
             for(int i = 0; i < animals.Length; i++)
             {
-                Console.WriteLine($"{animals[i].Name} is a new addition to the zoo!" );
+                animals[i].DisplayCard();
             }
         }
 
@@ -64,6 +64,8 @@ namespace MarieZoo
          {
              List
          }*/
+
+      
 
 
     }
