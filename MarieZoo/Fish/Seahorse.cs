@@ -1,8 +1,8 @@
 ﻿using MarieZoo.Interfaces;
-using MarieZoo.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
+
 
 namespace MarieZoo.Fish
 {
@@ -28,7 +28,7 @@ namespace MarieZoo.Fish
 
         public override string GetDiet()
         {
-            return "I eat algea and small creatures that live on coral.";
+            return "I eat algae and small creatures that live on coral.";
         }
 
         public string GetMakeSound()

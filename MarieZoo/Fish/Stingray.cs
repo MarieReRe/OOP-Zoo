@@ -1,4 +1,7 @@
 ﻿using MarieZoo.Interfaces;
+using System;
+
+using System.Collections.Generic;
 
 namespace MarieZoo.Fish
 {
@@ -9,7 +12,7 @@ namespace MarieZoo.Fish
         public override string Name { get; set; }
         public decimal LengthInInches => 15;
 
-        public string Color => "Royal blue with ivory white spots to reflect the sea floors shading to protect me from my preditors.";
+        public string Color => "Royal blue with ivory white spots to reflect the sea floors shading to protect me from my predators.";
 
         public string LegsOrFins => "I have two powerful fins that let me glide through the open ocean";
 
@@ -21,7 +24,7 @@ namespace MarieZoo.Fish
 
         public override string GetDiet()
         {
-            return "I love eating squid and molusks";
+            return "I love eating squid and mollusks";
         }
 
         public override int GetNumberOfTeeth()

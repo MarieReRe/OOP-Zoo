@@ -1,5 +1,7 @@
 using System;
+using MarieZoo.Birds;
 using Xunit;
+using MarieZoo.Interfaces;
 
 namespace MarieZoo.Test
 {

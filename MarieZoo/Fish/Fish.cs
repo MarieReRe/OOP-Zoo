@@ -1,4 +1,6 @@
 ﻿using System;
+using MarieZoo.Interfaces;
+using System.Collections.Generic;
 
 
 namespace MarieZoo.Fish

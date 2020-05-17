@@ -1,8 +1,8 @@
-﻿using MarieZoo.Birds;
+﻿using System;
+using MarieZoo.Birds;
 using MarieZoo.Fish;
 using MarieZoo.Mammals;
-using System;
-using System.Collections.Generic;
+
 
 namespace MarieZoo
 {

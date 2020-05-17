@@ -1,4 +1,8 @@
 ﻿using MarieZoo.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
 
 namespace MarieZoo.Mammals
 {
@@ -13,7 +17,7 @@ namespace MarieZoo.Mammals
 
         public string Movement => "Running, walking, pouncing";
 
-        public string Predators => "Expansion of human settlement, especially livestock grazing has led to increaded conflict.";
+        public string Predators => "Expansion of human settlement, especially livestock grazing has led to increased conflict.";
 
         public string FunFact => "Snow leopards are the only big cat that cannot roar";
 

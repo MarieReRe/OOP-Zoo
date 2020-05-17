@@ -1,11 +1,6 @@
-﻿using MarieZoo.Birds;
-using MarieZoo.Interfaces;
-using MarieZoo.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MarieZoo.Interfaces;
 
-namespace MarieZoo
+namespace MarieZoo.Birds
 {
     public class Puffin : Bird, IDesign, ISound, IEnvironment, IFeed
     {
@@ -39,7 +34,7 @@ namespace MarieZoo
 
         public override string NestingHabits()
         {
-            return "We nest on the cliffside in Iceland";
+            return "We nest on the cliff side in Iceland";
         }
     }
 }
