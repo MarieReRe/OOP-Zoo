@@ -8,7 +8,11 @@ namespace MarieZoo.Mammals
 {
     public class Koala : Mammals, IDesign
     {
-        public override string Name { get; set; }
+        public override string Name()
+        {
+            return "George";
+        }
+
         public override string Predator()
         {
             return "Humans and deforestation is my biggest threat";
@@ -40,6 +44,6 @@ namespace MarieZoo.Mammals
             return 30; ;
         }
 
-        
+       
     }
 }

@@ -4,7 +4,10 @@ namespace MarieZoo.Birds
 {
     public class Puffin : Bird, IDesign, ISound, IFeed
     {
-        public override string Name { get; set; }
+        public override string Name()
+        {
+            return "Puff Diddy";
+        }
         public override string Predator()
         {
             return "Humans hunt us for food";

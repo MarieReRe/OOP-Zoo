@@ -8,7 +8,12 @@ namespace MarieZoo.Fish
 {
     class Seahorse : Fish, IFeed, IDesign, ISound
     {
-        public override string Name { get; set; }
+
+        public override string Name()
+        {
+            return "Sven";
+        }
+
         public override string Predator()
         {
             return "Most bigger fish are a threat to me";

@@ -14,7 +14,7 @@ namespace MarieZoo
 
 		public virtual bool IsInZoo { get; set; }
 
-		public abstract string Name { get; set; }
+        public abstract string Name();
 
         public abstract string Predator();
 

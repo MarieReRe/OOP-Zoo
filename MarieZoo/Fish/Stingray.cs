@@ -9,7 +9,11 @@ namespace MarieZoo.Fish
     //CONCRETE CLASS
     class Stingray : Fish, IFeed, ISound, IDesign
     {
-        public override string Name { get; set; }
+        public override string Name()
+        {
+            return "Spotty";
+        }
+
         public override string Predator()
         {
             return "I am prone to attack by larger rays and a wide variety of sharks";

@@ -6,7 +6,12 @@ namespace MarieZoo.Birds
 {
     public class ScarletIbis : Bird, IDesign,IFeed, ISound
     {
-        public override string Name { get; set; }
+        
+        public override string Name()
+        {
+            return "Q-T Pie";
+        }
+
         public override string Predator()
         {
             return "We are hunted for bush meat";
