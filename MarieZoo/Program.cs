@@ -32,9 +32,9 @@ namespace MarieZoo
             Puffin puffin = new Puffin();
             ScarletIbis scarletIbis = new ScarletIbis();
             Seahorse seahorse = new Seahorse();
-            Stingray stingray = new Stingray() {Name = "Spotty" };
-            Koala koala = new Koala() {Name = "George" };
-            SnowLeopard snowLeopard = new SnowLeopard() {Name = "Fluffy" };
+            Stingray stingray = new Stingray();
+            Koala koala = new Koala();
+            SnowLeopard snowLeopard = new SnowLeopard();
 
             //Animal Array Contains 6 animals
 

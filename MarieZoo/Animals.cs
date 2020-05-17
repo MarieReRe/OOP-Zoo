@@ -4,12 +4,7 @@ using System.Collections.Generic;
 
 namespace MarieZoo
 {
-
-
-	/// <summary>
-	/// Summary description for ScarletIbis
-	/// </summary>
-	public  abstract class Animals
+    public  abstract class Animals
 	{
 
 		public virtual bool IsInZoo { get; set; }
@@ -22,9 +17,9 @@ namespace MarieZoo
 		public void DisplayCard()
         {
             Console.WriteLine("----------------------------");
-            Console.WriteLine($"{GetType().Name}");
+            Console.WriteLine($"{Name()}");
             Console.WriteLine("----------------------------");
-            Console.WriteLine($"Predator {Predator()}");
+            Console.WriteLine($"Our Predator(s): {Predator()}");
             Console.WriteLine("----------------------------");
             Console.WriteLine($"Fun Fact: {FunFact()}");
             Console.WriteLine("----------------------------");
