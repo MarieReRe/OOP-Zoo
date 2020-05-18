@@ -8,7 +8,13 @@
 ## Set Up
 
 
+Select ```File``` -> ```Open``` -> ```Project/Solution```
 
+Next navigate to the location you cloned the Repository.
+
+Double click on the ```Lab06-OOP-Zoo``` directory.
+
+Then select and open ```MarieZoo.sln```
 
 
 ## Visuals
