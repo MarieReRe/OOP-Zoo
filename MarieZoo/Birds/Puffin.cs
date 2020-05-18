@@ -4,10 +4,10 @@ namespace MarieZoo.Birds
 {
     public class Puffin : Bird, IDesign, ISound, IFeed
     {
-        public override string Name()
-        {
-            return "Puff Diddy";
-        }
+
+
+        public override string Name { get; set; }
+
         public override string Predator()
         {
             return "Humans hunt us for food";
@@ -31,11 +31,6 @@ namespace MarieZoo.Birds
            return "We lay white eggs, sometimes they have a tint of lilac";
         }
 
-        public string FeedMe()
-        {
-            return "Please do not feed me, you'll spoil my appetite";
-        }
-
         public string GetMakeSound()
         {
             return "chirp chirp";
@@ -45,5 +40,13 @@ namespace MarieZoo.Birds
         {
             return "We nest on the cliff side in Iceland";
         }
+
+        string IFeed.FeedMe { get; set; } = "Please do not feed me, you'll spoil my appetite";
+
+        public new bool YouCanFeedMe()
+        {
+            return false;
+        }
+
     }
 }

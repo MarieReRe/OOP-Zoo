@@ -6,12 +6,9 @@ using System.Text;
 namespace MarieZoo.Mammals
 
 {
-    public class Koala : Mammals, IDesign
+    public class Koala : Mammals, IDesign, IFeed
     {
-        public override string Name()
-        {
-            return "George";
-        }
+        public override string Name { get; set; }
 
         public override string Predator()
         {
@@ -37,13 +34,11 @@ namespace MarieZoo.Mammals
             return 1;
         }
 
-     
-
         public override int GetWeight()
         {
             return 30; ;
         }
 
-       
+        public string FeedMe { get; set; } = "Purchase a Eucalyptus branch at the desk for $20";
     }
 }

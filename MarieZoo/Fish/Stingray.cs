@@ -9,10 +9,8 @@ namespace MarieZoo.Fish
     //CONCRETE CLASS
     class Stingray : Fish, IFeed, ISound, IDesign
     {
-        public override string Name()
-        {
-            return "Spotty";
-        }
+        public override string Name { get; set; }
+       
 
         public override string Predator()
         {
@@ -45,15 +43,24 @@ namespace MarieZoo.Fish
             return 0;
         }
 
-        string IFeed.FeedMe()
+     
+
+        protected override void AdditionalDisplay()
         {
-            return "Squid for $1, we're hungry!";
+            Console.WriteLine();
         }
 
-    
+       
+
+
+
+
         string ISound.GetMakeSound()
         {
             return "blub blub";
         }
+
+
+        public string FeedMe { get; set; } = "Purchase squid at the counter for $10";
     }
 }

@@ -9,10 +9,8 @@ namespace MarieZoo.Fish
     class Seahorse : Fish, IFeed, IDesign, ISound
     {
 
-        public override string Name()
-        {
-            return "Sven";
-        }
+
+        public override string Name { get; set; }
 
         public override string Predator()
         {
@@ -32,9 +30,13 @@ namespace MarieZoo.Fish
 
         public string Movement => "You won't find me swimming around a lot as I get exhausted easily and could die from over exhaustion";
 
-        public string FeedMe()
+      
+
+        string IFeed.FeedMe { get; set; } = "Sorry, you cannot feed us";
+
+        public new bool YouCanFeedMe()
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public override string GetDiet()

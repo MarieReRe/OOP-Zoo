@@ -8,10 +8,7 @@ namespace MarieZoo.Mammals
 {
     public class SnowLeopard : Mammals, IDesign, ISound
     {
-        public override string Name()
-        {
-            return "Fluffy";
-        }
+        public override string Name { get; set; }
         public override string Predator()
         {
             return "Expansion of human settlement, especially livestock grazing has led to increased conflict.";
