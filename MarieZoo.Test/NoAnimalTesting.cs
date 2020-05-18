@@ -118,6 +118,19 @@ namespace MarieZoo.Test
             Assert.Equal(expected, input);
         }
 
+        [Fact]
+        public void GetSnowLeopardAge()
+        {
+            //Arrange
+            SnowLeopard snowLeopard = new SnowLeopard();
+
+            int input = 3;
+            int expected = snowLeopard.GetAge();
+
+            //assert
+            Assert.Equal(expected,input);
+        }
+
 
     }
 }
