@@ -105,6 +105,19 @@ namespace MarieZoo.Test
             Assert.Equal(expected, input);
         }
 
+        [Fact]
+        public void GetSnowLeopardColor()
+        {
+            //arrange
+            SnowLeopard snowLeopard = new SnowLeopard();
+
+            string input = "Creamy yellow with grey or black";
+            string expected = snowLeopard.Color;
+
+            //Assert
+            Assert.Equal(expected, input);
+        }
+
 
     }
 }
