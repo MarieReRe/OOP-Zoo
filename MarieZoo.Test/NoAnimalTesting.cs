@@ -90,6 +90,19 @@ namespace MarieZoo.Test
             Assert.Equal(expected, input);
         }
 
+        [Fact]
+        public void SeahorseMovements()
+        {
+            //arrange
+            Seahorse seahorse = new Seahorse();
+            //act
+            string input =
+                "You won't find me swimming around a lot as I get exhausted easily and could die from over exhaustion";
+            string expected = seahorse.Movement;
+            //assert
+            Assert.Equal(expected, input);
+
+        }
 
         /* -------------------MAMMAL SECTION-------------------------
    ---------------------------------------------------------*/
