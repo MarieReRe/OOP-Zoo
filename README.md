@@ -1,5 +1,5 @@
 # Lab06-OOP-Zoo
-![.NET Core](https://github.com/mrsantons/Lab06-OOP-Zoo/workflows/.NET%20Core/badge.svg)
+![.NET Core](https://github.com/mrsantons/Lab06-OOP-Zoo/workflows/.NET%20Core/badge.svg?branch=master)
 
 
 ## Problem Domain
