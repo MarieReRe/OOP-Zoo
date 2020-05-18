@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MarieZoo.Fish
 {
-    class Seahorse : Fish, IFeed, IDesign, ISound
+    public class Seahorse : Fish, IFeed, IDesign, ISound
     {
 
 

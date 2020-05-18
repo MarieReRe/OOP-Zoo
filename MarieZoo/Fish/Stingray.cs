@@ -7,7 +7,7 @@ namespace MarieZoo.Fish
 {
 
     //CONCRETE CLASS
-    class Stingray : Fish, IFeed, ISound, IDesign
+    public class Stingray : Fish, IFeed, ISound, IDesign
     {
         public override string Name { get; set; }
        
