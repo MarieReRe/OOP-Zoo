@@ -131,6 +131,17 @@ namespace MarieZoo.Test
             Assert.Equal(expected,input);
         }
 
+        [Fact]
+        public void GetKoalaWeight()
+        {
+            Koala koala = new Koala();
 
+            //act
+            int input = 30;
+            int expected = koala.GetWeight();
+
+            //assert
+            Assert.Equal(expected, input);
+        }
     }
 }
