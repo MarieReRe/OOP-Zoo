@@ -1,14 +1,27 @@
 ﻿using MarieZoo.Interfaces;
-using MarieZoo.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace MarieZoo.Fish
 {
-    class Seahorse : Fish, IFeed, IDesign, IEnvironment, ISound
+    public class Seahorse : Fish, IFeed, IDesign, ISound
     {
+
+
         public override string Name { get; set; }
+
+        public override string Predator()
+        {
+            return "Most bigger fish are a threat to me";
+        }
+
+        public override string FunFact()
+        {
+            return "Seahorses must eat constantly, since fod passes through its digestive system so quickly.";
+        }
+
         public decimal LengthInInches => 0.6m;
 
         public string Color => "I vary in golden and brown tones";
@@ -17,18 +30,18 @@ namespace MarieZoo.Fish
 
         public string Movement => "You won't find me swimming around a lot as I get exhausted easily and could die from over exhaustion";
 
-        public string Predators => throw new NotImplementedException();
+      
 
-        public string FunFact => "Seahorses must eat constantly, since fod passes through its digestive system so quickly.";
+        string IFeed.FeedMe { get; set; } = "Sorry, you cannot feed us";
 
-        public string FeedMe()
+        public new bool YouCanFeedMe()
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public override string GetDiet()
         {
-            return "I eat algea and small creatures that live on coral.";
+            return "I eat algae and small creatures that live on coral.";
         }
 
         public string GetMakeSound()

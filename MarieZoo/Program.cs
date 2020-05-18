@@ -1,8 +1,9 @@
-﻿using MarieZoo.Birds;
+﻿using System;
+using MarieZoo.Birds;
 using MarieZoo.Fish;
+using MarieZoo.Interfaces;
 using MarieZoo.Mammals;
-using System;
-using System.Collections.Generic;
+
 
 namespace MarieZoo
 {
@@ -20,7 +21,7 @@ namespace MarieZoo
 
 
 
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -29,12 +30,12 @@ namespace MarieZoo
 
             //create new animal array
             Animals[] animals = new Animals[6];
-            Puffin puffin = new Puffin() { Name = "Puff Diddy"};
-            ScarletIbis scarletIbis = new ScarletIbis() {Name = "Q-T Pie" };
-            Seahorse seahorse = new Seahorse() { Name = "Sven" };
-            Stingray stingray = new Stingray() {Name = "Spotty" };
-            Koala koala = new Koala() {Name = "George" };
-            SnowLeopard snowLeopard = new SnowLeopard() {Name = "Fluffy" };
+            Puffin puffin = new Puffin(){IsInZoo = true,  Name = "Puff Diddy"};
+            ScarletIbis scarletIbis = new ScarletIbis() { IsInZoo = true, Name = "Q-T Pie" };
+            Seahorse seahorse = new Seahorse() { IsInZoo = true, Name = "Sven" };
+            Stingray stingray = new Stingray(){IsInZoo = true,Name = "Spotty" };
+            Koala koala = new Koala() { IsInZoo = true, Name = "George" };
+            SnowLeopard snowLeopard = new SnowLeopard();
 
             //Animal Array Contains 6 animals
 
@@ -53,17 +54,13 @@ namespace MarieZoo
 
 
             //for loop to display animals
-            for(int i = 0; i < animals.Length; i++)
+            foreach (var t in animals)
             {
-                Console.WriteLine($"{animals[i].Name} is a new addition to the zoo!" );
+                t.DisplayCard();
             }
+
+
         }
-
-
-       /* public Puffin()
-        {
-            List
-       */ }
 
 
     }

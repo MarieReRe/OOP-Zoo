@@ -1,15 +1,23 @@
-﻿using MarieZoo.Birds;
-using MarieZoo.Interfaces;
-using MarieZoo.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MarieZoo.Interfaces;
 
-namespace MarieZoo
+namespace MarieZoo.Birds
 {
-    public class Puffin : Bird, IDesign, ISound, IEnvironment, IFeed
+    public class Puffin : Bird, IDesign, ISound, IFeed
     {
+
+
         public override string Name { get; set; }
+
+        public override string Predator()
+        {
+            return "Humans hunt us for food";
+        }
+
+        public override string FunFact()
+        {
+            return "puffins cannot take off without a running start";
+        }
+
         public decimal LengthInInches => 5;
 
         public string Color => "I am black and white with variants of orange on my beak";
@@ -18,18 +26,9 @@ namespace MarieZoo
 
         public string Movement => "I fly,swim, sometimes walk";
 
-        public string Predators => "Humans hunt us for food";
-
-        public string FunFact => "puffins cannot take off without a running start";
-
         public override string ColorOfEggs()
         {
            return "We lay white eggs, sometimes they have a tint of lilac";
-        }
-
-        public string FeedMe()
-        {
-            return "Please do not feed me, you'll spoil my appetite";
         }
 
         public string GetMakeSound()
@@ -39,7 +38,15 @@ namespace MarieZoo
 
         public override string NestingHabits()
         {
-            return "We nest on the cliffside in Iceland";
+            return "We nest on the cliff side in Iceland";
         }
+
+        string IFeed.FeedMe { get; set; } = "Please do not feed me, you'll spoil my appetite";
+
+        public new bool YouCanFeedMe()
+        {
+            return false;
+        }
+
     }
 }

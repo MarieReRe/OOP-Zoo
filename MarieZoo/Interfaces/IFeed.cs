@@ -7,6 +7,8 @@ namespace MarieZoo.Interfaces
     interface IFeed
     {
 
-        string FeedMe();
+        public string FeedMe { get; set; }
+        bool YouCanFeedMe();
+      
     }
 }
